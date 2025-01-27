@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog!</title>
+  </head>
+
+  <body class="page light-theme">
+    <header class="page-header">
+      <div class="container">
+        <span class="header-logo">
+          <img src="img/main-logo.svg" width="48" height="48" alt="Логотип портала">
+        </span>
+        <button class="theme-button" type="button">Изменить тему</button>
+      </div>
+    </header>
+
+    <main class="inner-news">
+      <article class="container">
+        <h1 class="inner-heading">🔥 Кричащий заголовок!</h1>
+        <div class="news-full">
+          <img src="img/pic.jpg" alt="Матрица">
+          <div class="news-stats">
+            <button class="heart" type="button"><span class="likes-number">10</span></button>
+            <time datetime="2025-01-27">27 января 2025</time>
+          </div>
+          <p>Оказывается, мы все живем в матрице!</p>
+        </div>
+        </article>
+
+        <section class="comment-feed container">
+          <h2>Комментарии</h2>
+          <ol class="comment-list">
+            <li class="user-comment">Да ну, бред какой-то…</li>
+          </ol>
+          <form action="" method="post" class="comment-form">
+            <div class="comment-inner">
+              <label class="comment-label" for="comment-input">ваш комментарий</label>
+              <input type="text" class="comment-field" value="" placeholder="Комментарий" required id="comment-input">
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </section>
+    </main>
+
+      <footer class="page-footer">
+        <div class="container">
+          <p>© FlashNews!</p>
+          <span class="footer-logo">
+            <img src="img/white-logo.svg" alt="Логотип портала">
+          </span>
+        </div>
+      </footer>
+
+    <script src="themes.js"></script>
+    <script src="likes.js"></script>
+    <script src="comments.js"></script>
+  </body>
+</html>
