@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style-main.css">
+    <title>Новости!</title>
+</head>
+
+<body class="page light-theme">
+<header class="page-header">
+    <div class="container">
+        <a class="header-logo">
+            <img src="img/main-logo.svg" width="67" height="29" alt="Логотип портала">
+        </a>
+        <a href="subscription.html" class="subscription-link">Подписка</a>
+        <button class="theme-button" type="button">Изменить тему</button>
+    </div>
+</header>
+
+<main class="index-main">
+    <div class="container">
+        <h1 class="visually-hidden">Новостной портал</h1>
+        <div class="news-view">
+            <button class="row-view view-checked" type="button">Список</button>
+            <button class="tile-view" type="button">Плитка</button>
+            <select class="filter" name="news-filter">
+                <option value="IT">IT</option>
+                <option value="cats">Котики</option>
+                <option value="games">Игры</option>
+                <option value="HR">HR</option>
+                <option value="all" selected>Все новости</option>
+            </select>
+        </div>
+        <section class="news-list">
+            <h2 class="visually-hidden">Все новости</h2>
+            <article class="news-block" data-category="cats">
+                <img src="img/news-cat.jpg" alt="Глаза кота">
+                <div class="news-block-text">
+                    <h3>Уникальное видео!</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#Котики</span>
+                    <time datetime="2024-03-24">24 марта 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="HR">
+                <img src="img/walk.jpg" alt="Люди гуляют">
+                <div class="news-block-text">
+                    <h3>Гулять может быть полезно</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#HR</span>
+                    <time datetime="2024-03-19">19 февраля 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="games">
+                <img src="img/ar.jpg" alt="Человек в очках виртуальной реальности">
+                <div class="news-block-text">
+                    <h3>Дополни свою реальность</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#Игры</span>
+                    <time datetime="2024-02-18">18 февраля 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="IT">
+                <img src="img/drone.jpg" alt="Маленький дрон">
+                <div class="news-block-text">
+                    <h3>Дроны</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#IT</span>
+                    <time datetime="2024-12-22">22 декабря 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="HR">
+                <img src="img/new-research.jpg" alt="Человек смотрит на доску с карточками">
+                <div class="news-block-text">
+                    <h3>Из мира психологии</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#HR</span>
+                    <time datetime="2024-10-12">12 октября 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="games">
+                <img src="img/new-drone.jpg" alt="Квадрокоптер">
+                <div class="news-block-text">
+                    <h3>Квадрокоптер — это не роскошь</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#Игры</span>
+                    <time datetime="2024-11-21">21 ноября 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="IT">
+                <img src="img/new-loop.jpg" alt="Бесконечные циклы">
+                <div class="news-block-text">
+                    <h3>Бесконечные циклы</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#IT</span>
+                    <time datetime="2024-10-16">16 октября 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="cats">
+                <img src="img/news-robot2.jpg" alt="Робот на курорте">
+                <div class="news-block-text">
+                    <h3>Сенсация!</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#Котики</span>
+                    <time datetime="2024-12-22">22 декабря 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="IT">
+                <img src="img/new-graph.jpg" alt="Новая библиотека">
+                <div class="news-block-text">
+                    <h3>Новая библиотека для создания графиков</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#IT</span>
+                    <time datetime="2024-10-14">14 октября 2024</time>
+                </div>
+            </article>
+            <article class="news-block" data-category="cats">
+                <img src="img/new-cat.jpg" alt="Кот на ноутбуке">
+                <div class="news-block-text">
+                    <h3>Секретные кадры</h3>
+                    <p>Описание</p>
+                    <span class="news-tag">#Котики</span>
+                    <time datetime="2024-10-13">13 октября 2024</time>
+                </div>
+            </article>
+        </section>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <p>© Новости</p>
+        <a class="footer-logo">
+            <img src="img/white-logo.svg" alt="Логотип портала">
+        </a>
+    </div>
+</footer>
+<button class="up-button" type="button">
+    ↑
+    <span class="visually-hidden">Наверх</span>
+</button>
+<script src="script.js"></script>
+<script src="themes.js"></script>
+<script src="up-button.js"></script>
+<script src="filter.js"></script>
+</body>
+
+</html>
